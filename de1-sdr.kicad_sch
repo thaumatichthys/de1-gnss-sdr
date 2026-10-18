@@ -1157,7 +1157,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:VQFN-40-1EP_6x6mm_P0.5mm_EP3.5x3.5mm_ThermalVias"
+			(property "Footprint" "Package_DFN_QFN:HVQFN-40-1EP_6x6mm_P0.5mm_EP4.1x4.1mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1168,7 +1168,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmx2594.pdf"
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmx2572.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1179,7 +1179,7 @@
 					)
 				)
 			)
-			(property "Description" "LMX2594 15-GHz Wideband PLLATINUM™ RF Synthesizer With Phase Synchronization and JESD204B Support"
+			(property "Description" "LMX2572 6.4-GHz Low power wideband RF synthesizer with phase synchronization and JESD204B support"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -8060,7 +8060,7 @@
 	(text_box "Gain block and balun"
 		(exclude_from_sim no)
 		(at 393.7 129.54 0)
-		(size 26.67 5.2183)
+		(size 26.67 3.9483)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -8419,7 +8419,7 @@
 	)
 	(text_box "-82.5 dBm"
 		(exclude_from_sim no)
-		(at 240.03 86.2217 0)
+		(at 240.03 84.9517 0)
 		(size 13.97 3.9483)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -29151,7 +29151,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-40-1EP_6x6mm_P0.5mm_EP3.5x3.5mm_ThermalVias"
+		(property "Footprint" "Package_DFN_QFN:HVQFN-40-1EP_6x6mm_P0.5mm_EP4.1x4.1mm"
 			(at 154.94 302.26 0)
 			(hide yes)
 			(show_name no)
@@ -29162,7 +29162,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmx2572.pdf"
 			(at 154.94 302.26 0)
 			(hide yes)
 			(show_name no)
@@ -29173,7 +29173,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LMX2572 6.4-GHz Low power wideband RF synthesizer with phase synchronization and JESD204B support"
 			(at 154.94 302.26 0)
 			(hide yes)
 			(show_name no)
