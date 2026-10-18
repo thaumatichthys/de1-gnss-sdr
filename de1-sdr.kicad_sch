@@ -1146,7 +1146,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "LMX2594"
+			(property "Value" "LMX2572"
 				(at 9.7633 -31.75 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -8059,8 +8059,8 @@
 	)
 	(text_box "Gain block and balun"
 		(exclude_from_sim no)
-		(at 393.7 129.4017 0)
-		(size 25.4 3.9483)
+		(at 393.7 129.54 0)
+		(size 26.67 5.2183)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -29140,7 +29140,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LMX2594"
+		(property "Value" "LMX2572"
 			(at 164.7033 334.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29162,7 +29162,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmx2594.pdf"
+		(property "Datasheet" ""
 			(at 154.94 302.26 0)
 			(hide yes)
 			(show_name no)
@@ -29173,7 +29173,7 @@
 				)
 			)
 		)
-		(property "Description" "LMX2594 15-GHz Wideband PLLATINUM™ RF Synthesizer With Phase Synchronization and JESD204B Support"
+		(property "Description" ""
 			(at 154.94 302.26 0)
 			(hide yes)
 			(show_name no)
