@@ -495,13 +495,60 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "RF_50",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "Net-(C10-Pad2)": [
+        "RF_50"
+      ],
+      "Net-(C11-Pad1)": [
+        "RF_50"
+      ],
+      "Net-(C12-Pad2)": [
+        "RF_50"
+      ],
+      "Net-(C24-Pad2)": [
+        "RF_50"
+      ],
+      "Net-(C30-Pad2)": [
+        "RF_50"
+      ],
+      "Net-(C32-Pad1)": [
+        "RF_50"
+      ],
+      "Net-(C32-Pad2)": [
+        "RF_50"
+      ],
+      "Net-(C35-Pad1)": [
+        "RF_50"
+      ],
+      "Net-(C35-Pad2)": [
+        "RF_50"
+      ],
+      "Net-(J1-In)": [
+        "RF_50"
+      ],
+      "Net-(R51-Pad2)": [
+        "RF_50"
+      ],
+      "Net-(U5-RF1)": [
+        "RF_50"
+      ],
+      "Net-(U5-RF2)": [
+        "RF_50"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
