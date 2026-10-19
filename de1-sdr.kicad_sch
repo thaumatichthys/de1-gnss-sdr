@@ -8137,6 +8137,26 @@
 		)
 		(uuid "5cf41547-f625-47dd-98e5-b070cd4f2014")
 	)
+	(text_box "80 MHz XO as ADC sample clock and PLL reference"
+		(exclude_from_sim no)
+		(at 370.84 263.7424 0)
+		(size 22.86 8.0376)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "627779be-d8ec-4140-9f60-057a5f995973")
+	)
 	(text_box "This is meant to run at 80 MSPS with Nyquist zone 3 from 80 to 120 MHz."
 		(exclude_from_sim no)
 		(at 304.8 317.5 0)
