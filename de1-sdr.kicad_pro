@@ -644,7 +644,7 @@
         "uuid": "bcdacd83-6024-474e-bbcc-dbd725ebb016"
       }
     ],
-    "used_designators": "L10,L13,C8",
+    "used_designators": "#PWR108-109,L10,L13,C8,R49-52,J4-5",
     "variants": []
   },
   "sheets": [
