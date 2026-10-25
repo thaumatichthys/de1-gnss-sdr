@@ -536,6 +536,9 @@
       "Net-(C35-Pad2)": [
         "RF_50"
       ],
+      "Net-(D1-A2)": [
+        "RF_50"
+      ],
       "Net-(J1-In)": [
         "RF_50"
       ],
@@ -691,7 +694,7 @@
         "uuid": "bcdacd83-6024-474e-bbcc-dbd725ebb016"
       }
     ],
-    "used_designators": "C2-5,C86,#PWR5-6,L2-5,L14",
+    "used_designators": "C1-9,C21,C46,C86-87,R1,R5-13,R21-32,R53-60,D1-4,L1-5,L10,L13,#PWR4,#PWR47,#PWR110-118",
     "variants": []
   },
   "sheets": [
