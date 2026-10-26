@@ -1,0 +1,5 @@
+(version 1)
+(rule ADC_BUS_DLY
+	(condition "A.hasNetClass('ADC_bus')")
+	(constraint length (min 252ps) (opt 253ps) (max 254ps))
+)

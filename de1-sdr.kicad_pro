@@ -50,10 +50,16 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -62,7 +68,7 @@
         "annular_width": "error",
         "clearance": "error",
         "connection_width": "warning",
-        "copper_edge_clearance": "error",
+        "copper_edge_clearance": "warning",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
         "creepage": "error",
@@ -187,7 +193,11 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.2,
+        0.5
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -208,13 +218,18 @@
         "single_track_defaults": {
           "corner_radius_percentage": 80,
           "corner_style": 1,
-          "max_amplitude": 1.0,
+          "max_amplitude": 3.0,
           "min_amplitude": 0.2,
           "single_sided": false,
-          "spacing": 0.6
+          "spacing": 1.1
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -479,7 +494,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.18,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -490,17 +505,35 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.25,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
-        "name": "RF_50",
+        "name": "ADC_bus",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "tuning_profile": "ADC_BUS"
+      },
+      {
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.18,
+        "name": "RF_50",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.35,
         "tuning_profile": ""
       }
     ],
@@ -509,16 +542,94 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "+1V8": [
+        "Power"
+      ],
+      "+1V8_ADC": [
+        "Power"
+      ],
+      "+3V3": [
+        "Power"
+      ],
+      "+3V3_A": [
+        "Power"
+      ],
+      "+3V3_ANT": [
+        "Power"
+      ],
+      "+5V_A": [
+        "Power"
+      ],
+      "+5V_IN": [
+        "Power"
+      ],
+      "/ADC_DCO": [
+        "ADC_bus"
+      ],
+      "/ADC_DOUT0": [
+        "ADC_bus"
+      ],
+      "/ADC_DOUT1": [
+        "ADC_bus"
+      ],
+      "/ADC_DOUT2": [
+        "ADC_bus"
+      ],
+      "/ADC_DOUT3": [
+        "ADC_bus"
+      ],
+      "/ADC_DOUT4": [
+        "ADC_bus"
+      ],
+      "/ADC_DOUT5": [
+        "ADC_bus"
+      ],
+      "/ADC_DOUT6": [
+        "ADC_bus"
+      ],
+      "/ADC_DOUT7": [
+        "ADC_bus"
+      ],
+      "/ADC_DOUT8": [
+        "ADC_bus"
+      ],
+      "/ADC_DOUT9": [
+        "ADC_bus"
+      ],
+      "/LO_L1": [
+        "RF_50"
+      ],
+      "/PLL_OUTA_TERM": [
+        "RF_50"
+      ],
+      "/PLL_OUTB_TERM": [
+        "RF_50"
+      ],
       "Net-(C10-Pad2)": [
         "RF_50"
       ],
       "Net-(C11-Pad1)": [
         "RF_50"
       ],
+      "Net-(C11-Pad2)": [
+        "RF_50"
+      ],
+      "Net-(C12-Pad1)": [
+        "RF_50"
+      ],
       "Net-(C12-Pad2)": [
         "RF_50"
       ],
       "Net-(C24-Pad2)": [
+        "RF_50"
+      ],
+      "Net-(C28-Pad1)": [
+        "RF_50"
+      ],
+      "Net-(C29-Pad2)": [
+        "Power"
+      ],
+      "Net-(C30-Pad1)": [
         "RF_50"
       ],
       "Net-(C30-Pad2)": [
@@ -536,13 +647,55 @@
       "Net-(C35-Pad2)": [
         "RF_50"
       ],
+      "Net-(C36-Pad2)": [
+        "Power"
+      ],
+      "Net-(C39-Pad1)": [
+        "RF_50"
+      ],
+      "Net-(C82-Pad2)": [
+        "Power"
+      ],
+      "Net-(C86-Pad1)": [
+        "RF_50"
+      ],
       "Net-(D1-A2)": [
+        "RF_50"
+      ],
+      "Net-(FL2-IN)": [
         "RF_50"
       ],
       "Net-(J1-In)": [
         "RF_50"
       ],
+      "Net-(J3-In)": [
+        "RF_50"
+      ],
+      "Net-(Q2-D)": [
+        "Power"
+      ],
       "Net-(R51-Pad2)": [
+        "RF_50"
+      ],
+      "Net-(U10-EN)": [
+        "Power"
+      ],
+      "Net-(U11-EN)": [
+        "Power"
+      ],
+      "Net-(U12-EN)": [
+        "Power"
+      ],
+      "Net-(U13-EN)": [
+        "Power"
+      ],
+      "Net-(U3-LO)": [
+        "RF_50"
+      ],
+      "Net-(U4-RFoutAP)": [
+        "RF_50"
+      ],
+      "Net-(U4-RFoutBP)": [
         "RF_50"
       ],
       "Net-(U5-RF1)": [
@@ -550,6 +703,9 @@
       ],
       "Net-(U5-RF2)": [
         "RF_50"
+      ],
+      "Net-(U6-EN)": [
+        "Power"
       ]
     },
     "netclass_patterns": []
@@ -694,7 +850,7 @@
         "uuid": "bcdacd83-6024-474e-bbcc-dbd725ebb016"
       }
     ],
-    "used_designators": "C1-9,C21,C46,C86-87,R1,R5-13,R21-32,R53-60,D1-4,L1-5,L10,L13,#PWR4,#PWR47,#PWR110-118",
+    "used_designators": "J2",
     "variants": []
   },
   "sheets": [
@@ -708,6 +864,33 @@
     "meta": {
       "version": 0
     },
-    "tuning_profiles_impedance_geometric": []
+    "tuning_profiles_impedance_geometric": [
+      {
+        "enable_time_domain_tuning": true,
+        "layer_entries": [
+          {
+            "bottom_reference_layer": "In1.Cu",
+            "delay": 6020300,
+            "diff_pair_gap": 0,
+            "signal_layer": "F.Cu",
+            "top_reference_layer": "UNDEFINED",
+            "width": 300000
+          },
+          {
+            "bottom_reference_layer": "UNDEFINED",
+            "delay": 6020300,
+            "diff_pair_gap": 0,
+            "signal_layer": "B.Cu",
+            "top_reference_layer": "In2.Cu",
+            "width": 300000
+          }
+        ],
+        "profile_name": "ADC_BUS",
+        "target_impedance": 60.0,
+        "type": 0,
+        "via_overrides": [],
+        "via_prop_delay": 6000000
+      }
+    ]
   }
 }
