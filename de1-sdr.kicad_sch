@@ -8656,6 +8656,26 @@
 		)
 		(uuid "a008c6cb-af42-4489-82e0-cfd15dd4088c")
 	)
+	(text_box "Match tested with the following parts.\nRFIN side: LQG15WH 0402 inductors, C0G/NP0 capacitors\nIF side: LQG21NR39K10 inductor, C0G/NP0 capacitor"
+		(exclude_from_sim no)
+		(at 414.02 101.6 0)
+		(size 36.83 15.24)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "aa0f1cee-623b-430b-980b-d57de6010ce8")
+	)
 	(text_box "LEDs"
 		(exclude_from_sim no)
 		(at 379.73 201.93 0)
@@ -8676,7 +8696,7 @@
 		)
 		(uuid "ae5b6bff-390f-4aee-8292-46fa66d550fd")
 	)
-	(text_box "L1 GNSS RECEIVER SDR\n\nThis is meant to be an add-on module for the Terasic DE-1 SoC's 40 pin GPIO0 header.\n\n\nTODO: \nAdd 50 ohm net classes\n\nFIX FOOTPRINTS FOR LC PARTS (this also kinda placeholder)\n\nFIX MIXER MATCHING NETWORK (this gunna be after eval board arrives)\n"
+	(text_box "L1 GNSS RECEIVER SDR\n\nThis is meant to be an add-on module for the Terasic DE-1 SoC's 40 pin GPIO0 header.\n"
 		(exclude_from_sim no)
 		(at 22.86 17.78 0)
 		(size 38.1 32.9072)
@@ -8898,7 +8918,7 @@
 		)
 		(uuid "fad9739b-2f5e-4700-bcd6-b356a6db9951")
 	)
-	(text_box "Architecture:\nDouble conversion superhet\n1575.42 MHz --mixer--> 100 MHz IF\n100 MHz IF --alias--> baseband\n"
+	(text_box "Architecture:\nSingle conversion superhet\n1575.42 MHz --mixer--> 60 MHz IF\n60 MHz IF --alias--> baseband\n"
 		(exclude_from_sim no)
 		(at 22.86 93.98 0)
 		(size 38.1 27.94)
@@ -9033,7 +9053,7 @@
 		(uuid "3a73baa7-7071-4333-bdc7-baa264bec168")
 	)
 	(junction
-		(at 364.49 82.55)
+		(at 359.41 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3b76f54c-74ce-484a-91e0-5a23db72790c")
@@ -9463,12 +9483,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b22b2f13-80e7-4bbd-9fe3-4916a533955c")
-	)
-	(junction
-		(at 379.73 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b32e9f8d-fe0c-4087-9338-04af1f515063")
 	)
 	(junction
 		(at 504.19 172.72)
@@ -10362,6 +10376,16 @@
 	)
 	(wire
 		(pts
+			(xy 379.73 82.55) (xy 383.54 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a71b166-0e6e-42cf-890c-e765d0865845")
+	)
+	(wire
+		(pts
 			(xy 392.43 303.53) (xy 382.27 303.53)
 		)
 		(stroke
@@ -10772,7 +10796,7 @@
 	)
 	(wire
 		(pts
-			(xy 364.49 82.55) (xy 369.57 82.55)
+			(xy 359.41 82.55) (xy 364.49 82.55)
 		)
 		(stroke
 			(width 0)
@@ -10849,16 +10873,6 @@
 			(type default)
 		)
 		(uuid "2ff3fe36-37f6-4a2b-a5dd-72650baee0fc")
-	)
-	(wire
-		(pts
-			(xy 436.88 82.55) (xy 444.5 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3069f49c-e535-4d1a-b9a8-7002512c8e2e")
 	)
 	(wire
 		(pts
@@ -11399,16 +11413,6 @@
 			(type default)
 		)
 		(uuid "4b0e691d-1420-46a2-8ada-c6df3a9b9cf3")
-	)
-	(wire
-		(pts
-			(xy 379.73 82.55) (xy 379.73 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b7344ef-415f-488d-8edc-1406623e268f")
 	)
 	(wire
 		(pts
@@ -12592,7 +12596,7 @@
 	)
 	(wire
 		(pts
-			(xy 364.49 82.55) (xy 364.49 85.09)
+			(xy 359.41 82.55) (xy 359.41 85.09)
 		)
 		(stroke
 			(width 0)
@@ -12732,16 +12736,6 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 82.55) (xy 364.49 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e82e59e-d5b5-4a19-8b11-12a4b54163c3")
-	)
-	(wire
-		(pts
 			(xy 153.67 143.51) (xy 157.48 143.51)
 		)
 		(stroke
@@ -12759,16 +12753,6 @@
 			(type default)
 		)
 		(uuid "8ee53c6b-e590-453e-a202-d040668cc11f")
-	)
-	(wire
-		(pts
-			(xy 379.73 90.17) (xy 379.73 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90848402-ca6e-49ba-9f5c-b1671aa7f1f1")
 	)
 	(wire
 		(pts
@@ -13112,7 +13096,7 @@
 	)
 	(wire
 		(pts
-			(xy 364.49 90.17) (xy 364.49 91.44)
+			(xy 359.41 90.17) (xy 359.41 91.44)
 		)
 		(stroke
 			(width 0)
@@ -13222,7 +13206,7 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 82.55) (xy 355.6 82.55)
+			(xy 328.93 82.55) (xy 359.41 82.55)
 		)
 		(stroke
 			(width 0)
@@ -13679,16 +13663,6 @@
 			(type default)
 		)
 		(uuid "b790d726-34c1-478d-90da-94734fab0074")
-	)
-	(wire
-		(pts
-			(xy 379.73 82.55) (xy 383.54 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b83fae06-6268-4467-8521-af7213fb5c87")
 	)
 	(wire
 		(pts
@@ -14832,7 +14806,7 @@
 	)
 	(wire
 		(pts
-			(xy 401.32 82.55) (xy 431.8 82.55)
+			(xy 401.32 82.55) (xy 444.5 82.55)
 		)
 		(stroke
 			(width 0)
@@ -15402,13 +15376,13 @@
 	)
 	(wire
 		(pts
-			(xy 374.65 82.55) (xy 379.73 82.55)
+			(xy 369.57 82.55) (xy 374.65 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fe3b2231-b55b-4116-b043-80bd8e2c3685")
+		(uuid "fe7c8f92-8566-4637-93ed-e241232317c7")
 	)
 	(wire
 		(pts
@@ -27291,7 +27265,7 @@
 			(justify right bottom)
 		)
 		(uuid "0a457182-9234-4ea2-9cd2-ca58803adeda")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 172.0999 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27326,7 +27300,7 @@
 			(justify left bottom)
 		)
 		(uuid "13934277-1fe2-444e-bd93-62dff8bbe5a0")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 222.9485 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27361,7 +27335,7 @@
 			(justify left bottom)
 		)
 		(uuid "25031067-8ac5-460d-b014-1c646451080d")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 465.5185 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27396,7 +27370,7 @@
 			(justify left bottom)
 		)
 		(uuid "3329656e-e10c-41ad-a130-cc5dd941c15d")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 191.1985 276.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27431,7 +27405,7 @@
 			(justify left bottom)
 		)
 		(uuid "3361bbe4-cdf6-4da5-bc7e-87ef6c8c922a")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 191.1985 284.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27465,7 +27439,7 @@
 			(justify right bottom)
 		)
 		(uuid "35a55ef9-de39-4324-b455-8946de924757")
-		(property "Net Class" "ADC_bus"
+		(property "Netclass" "ADC_bus"
 			(at 426.72 346.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27499,7 +27473,7 @@
 			(justify right bottom)
 		)
 		(uuid "42a8557e-c6ef-4e17-8407-4cfd050ca4c7")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 100.33 143.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27534,7 +27508,7 @@
 			(justify right bottom)
 		)
 		(uuid "486f505e-3674-429d-a8d6-ae68efca3d40")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 245.8085 281.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27568,7 +27542,7 @@
 			(justify left bottom)
 		)
 		(uuid "4c2b053a-73d0-4f25-bcb9-e72c66b59343")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 441.96 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27602,7 +27576,7 @@
 			(justify right bottom)
 		)
 		(uuid "4cb9c6d3-d778-416e-9cff-6ee639a1fe06")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 146.05 198.12 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27636,7 +27610,7 @@
 			(justify right bottom)
 		)
 		(uuid "4cdd4d66-0e05-4373-8005-c4a383934fe9")
-		(property "Net Class" "ADC_bus"
+		(property "Netclass" "ADC_bus"
 			(at 426.72 344.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27670,7 +27644,7 @@
 			(justify right bottom)
 		)
 		(uuid "4d366c0a-f580-45b6-88c8-f847effeeef4")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 53.34 198.12 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27704,7 +27678,7 @@
 			(justify right bottom)
 		)
 		(uuid "4fcef8d3-a1bc-4f93-8c46-8b39f25fa9ef")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 57.15 172.72 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27739,7 +27713,7 @@
 			(justify right bottom)
 		)
 		(uuid "55111c63-652a-4aec-8c22-76c240ecc400")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 231.8385 350.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27774,7 +27748,7 @@
 			(justify left bottom)
 		)
 		(uuid "55e339a5-81f3-4632-a130-c9533f19cbd9")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 398.2085 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27808,7 +27782,7 @@
 			(justify right bottom)
 		)
 		(uuid "592ffb3c-8896-4789-8ed9-8472f0320365")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 189.23 194.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27843,7 +27817,7 @@
 			(justify right bottom)
 		)
 		(uuid "59ba57ea-22e0-48fe-add4-e556d7d85861")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 446.4685 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27878,7 +27852,7 @@
 			(justify left bottom)
 		)
 		(uuid "5a96c4e8-bad4-4976-bd1e-4f0dd2e13989")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 338.5185 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27913,7 +27887,7 @@
 			(justify right bottom)
 		)
 		(uuid "5eacbcda-b565-47a9-a038-3678b0256da5")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 192.4685 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27947,7 +27921,7 @@
 			(justify right bottom)
 		)
 		(uuid "681a58cd-8fe1-45d6-bb03-0c937365f6ba")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 146.05 147.32 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27981,7 +27955,7 @@
 			(justify right bottom)
 		)
 		(uuid "6982f1bd-19b0-4178-9817-1388fda2bac0")
-		(property "Net Class" "ADC_bus"
+		(property "Netclass" "ADC_bus"
 			(at 426.72 349.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28015,7 +27989,7 @@
 			(justify right bottom)
 		)
 		(uuid "6f19c577-7627-4abf-afb8-2cfcab2412c9")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 189.23 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28050,7 +28024,7 @@
 			(justify right bottom)
 		)
 		(uuid "72d12b38-8f07-4d5d-914f-e8dcb51d4ce4")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 231.8385 363.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28084,7 +28058,7 @@
 			(justify right bottom)
 		)
 		(uuid "733327f8-0e5f-401a-9a27-e6af28bbb878")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 57.15 147.32 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28118,7 +28092,7 @@
 			(justify right bottom)
 		)
 		(uuid "74cf3df3-dadb-4b09-a3bc-509a6319522f")
-		(property "Net Class" "ADC_bus"
+		(property "Netclass" "ADC_bus"
 			(at 426.72 328.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28152,7 +28126,7 @@
 			(justify left bottom)
 		)
 		(uuid "76daea28-8031-4bf1-964c-1600f46a6858")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 497.84 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28187,7 +28161,7 @@
 			(justify right bottom)
 		)
 		(uuid "7bfe7a17-d432-4681-93e2-9a8b088a27f3")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 182.3085 284.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28222,7 +28196,7 @@
 			(justify right bottom)
 		)
 		(uuid "806a23ec-de30-4c64-821c-3e1de5097df5")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 214.0585 294.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28256,7 +28230,7 @@
 			(justify right bottom)
 		)
 		(uuid "844ba44b-b0a6-46dd-a1cb-41ad5a7a4200")
-		(property "Net Class" "ADC_bus"
+		(property "Netclass" "ADC_bus"
 			(at 426.72 341.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28290,7 +28264,7 @@
 			(justify right bottom)
 		)
 		(uuid "8d42bf19-ca60-4440-b4fb-e434b1764721")
-		(property "Net Class" "ADC_bus"
+		(property "Netclass" "ADC_bus"
 			(at 426.72 351.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28324,7 +28298,7 @@
 			(justify right bottom)
 		)
 		(uuid "9590fcab-0512-4485-bcc4-c5f36c5459e6")
-		(property "Net Class" "ADC_bus"
+		(property "Netclass" "ADC_bus"
 			(at 426.72 331.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28359,7 +28333,7 @@
 			(justify right bottom)
 		)
 		(uuid "98af396d-3187-4f23-997e-5991045658b6")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 182.3085 292.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28393,7 +28367,7 @@
 			(justify right bottom)
 		)
 		(uuid "a26fcbd7-8f48-47cd-afb8-08546ca1fb74")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 189.23 143.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28427,7 +28401,7 @@
 			(justify right bottom)
 		)
 		(uuid "a6074cc5-eddd-48bf-bbc1-a2fa1f7cbbc5")
-		(property "Net Class" "ADC_bus"
+		(property "Netclass" "ADC_bus"
 			(at 426.72 359.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28461,7 +28435,7 @@
 			(justify left bottom)
 		)
 		(uuid "a71ad309-91f1-4b5a-9001-1dea27d4f99c")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 85.09 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28495,7 +28469,7 @@
 			(justify right bottom)
 		)
 		(uuid "ac0012d3-6476-4d44-91be-27c4f413548c")
-		(property "Net Class" "ADC_bus"
+		(property "Netclass" "ADC_bus"
 			(at 426.72 334.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28529,7 +28503,7 @@
 			(justify right bottom)
 		)
 		(uuid "b5aba5a9-16f2-469b-9a07-f47064b667c4")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 100.33 194.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28564,7 +28538,7 @@
 			(justify left bottom)
 		)
 		(uuid "bb9a1c26-cb40-4d2a-be30-e947218a518b")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 212.7885 276.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28598,7 +28572,7 @@
 			(justify right bottom)
 		)
 		(uuid "be303e43-9d9b-402c-9de1-e6e6d7be89a6")
-		(property "Net Class" "ADC_bus"
+		(property "Netclass" "ADC_bus"
 			(at 426.72 336.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28632,7 +28606,7 @@
 			(justify right bottom)
 		)
 		(uuid "c00b2161-654f-4da8-9a7e-39c5f1092908")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 43.18 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28667,7 +28641,7 @@
 			(justify right bottom)
 		)
 		(uuid "c0473184-b885-45aa-96e7-f231e25be253")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 323.2785 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28702,7 +28676,7 @@
 			(justify right bottom)
 		)
 		(uuid "c3b360be-50e9-47c3-85b8-1bbf887642a5")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 109.9185 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28737,7 +28711,7 @@
 			(justify right bottom)
 		)
 		(uuid "d33c907d-a9f8-4694-87b6-21ce9333aa3b")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 497.2685 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28772,7 +28746,7 @@
 			(justify left bottom)
 		)
 		(uuid "d544e901-a0c2-483e-ae3a-4d3911c45739")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 377.8885 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28807,7 +28781,7 @@
 			(justify left bottom)
 		)
 		(uuid "dd6648d9-182d-42d5-9f15-acd0f4511bb4")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 460.4385 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28842,7 +28816,7 @@
 			(justify right bottom)
 		)
 		(uuid "ece34fa9-f422-471d-8a03-8a18fb722471")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 287.7185 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28877,7 +28851,7 @@
 			(justify left bottom)
 		)
 		(uuid "f0c8be6c-373a-4b44-af33-bf39c8096f01")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 553.1485 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28912,7 +28886,7 @@
 			(justify left bottom)
 		)
 		(uuid "f8759cd8-b924-4b53-9fc0-a9c6f332743d")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 135.3185 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28946,7 +28920,7 @@
 			(justify right bottom)
 		)
 		(uuid "fac73db9-ed10-442b-8b35-e4bb6e4d612f")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 100.33 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28980,7 +28954,7 @@
 			(justify right bottom)
 		)
 		(uuid "fbe968e6-c81b-4c94-a3cf-19cacfc26cb0")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 146.05 172.72 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29014,7 +28988,7 @@
 			(justify right bottom)
 		)
 		(uuid "fe17771f-2227-4de2-bfb0-bbb98b79fce7")
-		(property "Net Class" "ADC_bus"
+		(property "Netclass" "ADC_bus"
 			(at 426.72 339.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29049,7 +29023,7 @@
 			(justify left bottom)
 		)
 		(uuid "fe6bcbfa-b30d-4a85-b98b-5757671192c5")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 516.3185 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29084,7 +29058,7 @@
 			(justify right bottom)
 		)
 		(uuid "ff6b65eb-36b2-48a1-bdf4-f7fc234cc044")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 97.2185 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29119,7 +29093,7 @@
 			(justify right bottom)
 		)
 		(uuid "ffbd66be-5259-4c41-a53d-58ab3b960bdc")
-		(property "Net Class" "RF_50"
+		(property "Netclass" "RF_50"
 			(at 414.7185 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32996,7 +32970,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 364.49 91.44 0)
+		(at 359.41 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33007,7 +32981,7 @@
 		(fields_autoplaced yes)
 		(uuid "2282eab9-5903-4c69-b91c-bbea5f784743")
 		(property "Reference" "#PWR032"
-			(at 364.49 97.79 0)
+			(at 359.41 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33018,7 +32992,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 364.49 96.52 0)
+			(at 359.41 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33028,7 +33002,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 364.49 91.44 0)
+			(at 359.41 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33039,7 +33013,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 364.49 91.44 0)
+			(at 359.41 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33050,7 +33024,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 364.49 91.44 0)
+			(at 359.41 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35274,7 +35248,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 372.11 82.55 90)
+		(at 367.03 82.55 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -35285,7 +35259,7 @@
 		(fields_autoplaced yes)
 		(uuid "3aae6e32-3d0f-45cf-b348-4980176d0bfd")
 		(property "Reference" "L8"
-			(at 372.11 77.47 90)
+			(at 367.03 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -35294,8 +35268,8 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 372.11 80.01 90)
+		(property "Value" "5.6n"
+			(at 367.03 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -35305,7 +35279,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 372.11 82.55 0)
+			(at 367.03 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35316,7 +35290,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 372.11 82.55 0)
+			(at 367.03 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35326,8 +35300,8 @@
 				)
 			)
 		)
-		(property "Description" "LQW15AN2N2B80D"
-			(at 372.11 82.55 0)
+		(property "Description" ""
+			(at 367.03 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35565,7 +35539,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0thaumati-footprintslib:ADAMTECH_RF2-143-T-17-50-G"
+		(property "Footprint" "0thaumati-footprintslib:ADAMTECH_RF2-143-T-17-50-G_IMPROVED"
 			(at 80.01 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -36417,6 +36391,88 @@
 			(project "de1-sdr"
 				(path "/bcdacd83-6024-474e-bbcc-dbd725ebb016"
 					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 359.41 87.63 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "455347ab-294a-4bc9-bb58-6286cfd375c5")
+		(property "Reference" "L14"
+			(at 360.68 86.3599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "3.3n"
+			(at 360.68 88.8999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+			(at 359.41 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 359.41 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 359.41 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "af6e4e22-207c-4776-addc-0c742220e3c3")
+		)
+		(pin "1"
+			(uuid "377a1521-04b5-46d8-ac94-87cbb0a5d2a5")
+		)
+		(instances
+			(project "de1-sdr"
+				(path "/bcdacd83-6024-474e-bbcc-dbd725ebb016"
+					(reference "L14")
 					(unit 1)
 				)
 			)
@@ -37622,99 +37678,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 364.49 87.63 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5315855e-d7cd-45cb-bf4d-82e40631d646")
-		(property "Reference" "C23"
-			(at 367.03 86.3535 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" ""
-			(at 367.03 88.8935 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 364.49 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 364.49 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 364.49 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field5" ""
-			(at 364.49 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "b77840f5-5f7c-4bb4-9491-461b8a5bd45a")
-		)
-		(pin "1"
-			(uuid "45551a6c-2ca6-46ea-b492-8cafb42e4e61")
-		)
-		(instances
-			(project "de1-sdr"
-				(path "/bcdacd83-6024-474e-bbcc-dbd725ebb016"
-					(reference "C23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 297.18 354.33 180)
 		(unit 1)
 		(body_style 1)
@@ -38446,84 +38409,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 379.73 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5aee16a2-3153-44cd-9672-85fcfc6462a6")
-		(property "Reference" "#PWR0113"
-			(at 379.73 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 379.73 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 379.73 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 379.73 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 379.73 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2072c908-5b4b-424a-bf87-1fe62c6b34fc")
-		)
-		(instances
-			(project "de1-sdr"
-				(path "/bcdacd83-6024-474e-bbcc-dbd725ebb016"
-					(reference "#PWR0113")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 107.95 288.29 270)
 		(unit 1)
 		(body_style 1)
@@ -39022,7 +38907,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "100n"
 			(at 417.83 49.5235 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43662,7 +43547,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "390n"
 			(at 445.77 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43716,6 +43601,86 @@
 			(project "de1-sdr"
 				(path "/bcdacd83-6024-474e-bbcc-dbd725ebb016"
 					(reference "L9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 377.19 82.55 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8e166114-fe84-41a1-9b8b-433e21630ef0")
+		(property "Reference" "C23"
+			(at 377.1836 88.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "560p"
+			(at 377.1836 86.36 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 377.19 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 377.19 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 377.19 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6b63b0b8-f433-4552-869e-c4f2ec88b00f")
+		)
+		(pin "1"
+			(uuid "b3f6a60b-4f6c-46c9-9542-57e1bdc6fd20")
+		)
+		(instances
+			(project "de1-sdr"
+				(path "/bcdacd83-6024-474e-bbcc-dbd725ebb016"
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -49417,86 +49382,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 434.34 82.55 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c28540db-40ff-4c95-a1d7-f68b01b9a321")
-		(property "Reference" "R53"
-			(at 434.34 77.47 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 434.34 80.01 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 434.34 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 434.34 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 434.34 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c18843ff-fec5-4f9f-a71d-a6f0e0ea1337")
-		)
-		(pin "2"
-			(uuid "5f0622e5-9be3-4f2c-83ee-87530d1ee446")
-		)
-		(instances
-			(project "de1-sdr"
-				(path "/bcdacd83-6024-474e-bbcc-dbd725ebb016"
-					(reference "R53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 127 143.51 0)
 		(unit 1)
@@ -50219,88 +50104,6 @@
 			(project "de1-sdr"
 				(path "/bcdacd83-6024-474e-bbcc-dbd725ebb016"
 					(reference "C61")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 379.73 87.63 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "c8fb80db-099c-4e40-abd3-44e7f9395f7b")
-		(property "Reference" "R55"
-			(at 382.27 86.3599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" ""
-			(at 382.27 88.8999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 379.73 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 379.73 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 379.73 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0ecb03b6-bbe9-4f85-8842-99bd3bbd63ac")
-		)
-		(pin "2"
-			(uuid "2181fa66-85b4-489d-8fbc-e904c6a0b4de")
-		)
-		(instances
-			(project "de1-sdr"
-				(path "/bcdacd83-6024-474e-bbcc-dbd725ebb016"
-					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -52068,86 +51871,6 @@
 			(project "de1-sdr"
 				(path "/bcdacd83-6024-474e-bbcc-dbd725ebb016"
 					(reference "C45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 358.14 82.55 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e1b1ac21-a596-4b3a-b7c9-3c83bc3e5663")
-		(property "Reference" "R54"
-			(at 358.14 77.47 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 358.14 80.01 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 358.14 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 358.14 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 358.14 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "676e8091-98da-4cd9-827f-d8a6257c1776")
-		)
-		(pin "2"
-			(uuid "c2986b7d-ad6e-418f-8f5b-15c0714bcd17")
-		)
-		(instances
-			(project "de1-sdr"
-				(path "/bcdacd83-6024-474e-bbcc-dbd725ebb016"
-					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -54126,7 +53849,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "15p"
 			(at 449.5863 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
