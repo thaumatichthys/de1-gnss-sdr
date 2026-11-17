@@ -640,7 +640,10 @@
       "Net-(C12-Pad2)": [
         "RF_50"
       ],
-      "Net-(C24-Pad2)": [
+      "Net-(C26-Pad1)": [
+        "RF_50"
+      ],
+      "Net-(C27-Pad2)": [
         "RF_50"
       ],
       "Net-(C28-Pad1)": [
@@ -649,22 +652,7 @@
       "Net-(C29-Pad2)": [
         "Power"
       ],
-      "Net-(C30-Pad1)": [
-        "RF_50"
-      ],
-      "Net-(C30-Pad2)": [
-        "RF_50"
-      ],
-      "Net-(C32-Pad1)": [
-        "RF_50"
-      ],
       "Net-(C32-Pad2)": [
-        "RF_50"
-      ],
-      "Net-(C35-Pad1)": [
-        "RF_50"
-      ],
-      "Net-(C35-Pad2)": [
         "RF_50"
       ],
       "Net-(C36-Pad2)": [
@@ -679,19 +667,13 @@
       "Net-(C86-Pad1)": [
         "RF_50"
       ],
-      "Net-(D1-A2)": [
-        "RF_50"
-      ],
-      "Net-(FL2-IN)": [
-        "RF_50"
-      ],
-      "Net-(J3-In)": [
+      "Net-(J1-In)": [
         "RF_50"
       ],
       "Net-(Q2-D)": [
         "Power"
       ],
-      "Net-(R51-Pad2)": [
+      "Net-(T1-P-Pad6)": [
         "RF_50"
       ],
       "Net-(U10-EN)": [
@@ -723,6 +705,24 @@
       ],
       "Net-(U6-EN)": [
         "Power"
+      ],
+      "Net-(U7-Pad1)": [
+        "RF_50"
+      ],
+      "Net-(U7-Pad2)": [
+        "RF_50"
+      ],
+      "Net-(U8-Pad1)": [
+        "RF_50"
+      ],
+      "Net-(U8-Pad3)": [
+        "RF_50"
+      ],
+      "Net-(U9-Pad1)": [
+        "RF_50"
+      ],
+      "Net-(U9-Pad3)": [
+        "RF_50"
       ]
     },
     "netclass_patterns": []
@@ -818,6 +818,12 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -868,7 +874,7 @@
         "uuid": "bcdacd83-6024-474e-bbcc-dbd725ebb016"
       }
     ],
-    "used_designators": "C23,C87,J2,L14",
+    "used_designators": "C23,C87,J2,L14,R34",
     "variants": []
   },
   "sheets": [
